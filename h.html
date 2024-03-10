@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function calcYears(years, repeativeYears){
+          let age = 0;
+          let conversion = [9, 15];
+          while(years > 0){
+            years -= conversion.pop() ?? repeativeYears;
+            if(years < 0){
+              break;
+            }
+            age++;
+          }
+          return age;
+      }
+
+      var ownedCatAndDog = function(catYears, dogYears) {
+          return [calcYears(catYears, 4), calcYears(dogYears, 5)]
+      }
+      console.log(ownedCatAndDog(56,64))
+  </script>
+</body>
+</html>
