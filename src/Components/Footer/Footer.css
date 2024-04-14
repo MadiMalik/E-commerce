@@ -21,7 +21,7 @@
 
 .footer-links{
   display: flex;
-  flex-wrap: wrapgi;
+  flex-wrap: wrap;
   list-style: none;
   gap: 50px;
   color: #252525;
